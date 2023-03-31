@@ -110,3 +110,24 @@ docker exec -it <container_name> bash/sh
 psql postgresql://<username>:<password>@localhost:<port>/postgres
 psql postgresql://storefront@localhost:5432/postgres
 ```
+
+### Environmental Variables Set up
+```
+PORT="3000"
+PORT_TEST="3001"
+POSTGRES_HOST="localhost"
+POSTGRES_DB="storefront_dev"
+POSTGRES_USER="###"
+POSTGRES_PASSWORD="###"
+POSTGRES_TEST_DB="storefront_dev"
+TOKEN_KEY="###"
+BCRYPT_PASSWORD="###"
+SALT_ROUNDS="10"
+ENV="dev"
+```
+
+### Start App
+`npm run watch` or `npm run start`
+
+### Testing
+`npm run test`
