@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Udacity Storefront</title>
+</head>
+
+<body>
+    <h1>Welcome to the Udacity Storefront</h1>
+    <p>The following routes are given:</p>
+    <pre>
+    #### Users
+    - Index `/users` [GET] [token required]
+    - Create `/users` [POST] ========== payload: { firstname, lastname, username, password }
+    - Read `/users/:id` [GET] [token required]
+    - Update `/users/:id` [PUT] [token required]
+    - Delete `/users/:id` [DELETE] [token required]
+    - Auth `/users/auth` [POST] ========== payload: { username, password }
+    
+    #### Products
+    - Index `/products` [GET]
+    - Create `/products` [POST] [token required] ========== payload: { name, price, category(optional) }
+    - Read `/products/:id` [GET]
+    - Update `/products/:id` [PUT] [token required] ========== payload: { name, price, category(optional) }
+    - Delete `/products/:id` [DELETE] [token required]
+
+    #### Orders
+    - Index `/orders` [GET] [token required]
+    - Create `/orders` [POST] [token required]
+    - Read `/orders/:id` [GET] [token required]
+    - Delete `/orders/:id` [DELETE] [token required]
+    - GetCurent `/orders/current/:user_id` [GET] [token required]
+    - GetByActive `/orders/actived/:user_id` [GET] [token required]
+    - GetByComplete `/orders/completed/:user_id` [GET] [token required]
+  </pre>
+</body>
+
+</html>

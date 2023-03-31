@@ -1,0 +1,49 @@
+{
+  "name": "create_an_api_with_postgres_sql_and_express",
+  "version": "1.0.0",
+  "category": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon dist/",
+    "build": "npx tsc",
+    "watch": "tsc-watch --esModuleInterop src/index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
+    "db-up": "db-migrate up",
+    "db-down": "db-migrate down",
+    "db-up-test": "db-migrate up --env test && ENV=test",
+    "db-down-test": "db-migrate down --env test && ENV=test",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
+  },
+  "keywords": [],
+  "author": "DanhNLC",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
+    "express": "^4.18.2",
+    "jasmine": "^4.6.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "pg": "^8.10.0",
+    "supertest": "^6.3.3",
+    "ts-watch": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "^4.3.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.15.10",
+    "@types/pg": "^8.6.6",
+    "@types/supertest": "^2.0.12",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
